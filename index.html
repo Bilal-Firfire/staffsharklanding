@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+      <title>Staff Shark</title>
+</head>
+<body>
+  <!--pattern grid-->
+ <!-- <img class="grids_pattern" src="/assets/grids_2.jpg" alt=""> -->
+
+<!--button page-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <!--Navigation Section-->
+  <div class="container">
+    <nav class="navbar navbar-expand-md ">
+      <!-- <h1 class="staff-shark" data-text="Staff Shark">Staff Shark</h1> -->
+        <img class="logo" src="LinkedIn_Company_Logo_PNG.png" alt="">
+        <div class="text">Staff Shark</div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#feature_section">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing-feature">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#abt">About</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <a href="#demo"><button class="btn btn-primary btn-md me-2">Demo</button></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <!--Hero section-->
+  <div class="hero-container">
+    <div class="left-column">
+      <h1>HR made easy, <br>business made better</h1>
+      <p>Streamline your HR operations with our cutting-edge cloud-based app</p>
+      <a href="#" class="cta-button">Get started<i class='fas fa-angle-right' style='font-size:20px;margin-left: 10px;margin-top: 5px;'></i> </a> <a href="#" class="cta-button-2">watch video<i class='fas fa-play-circle' style='font-size:20px;margin-left: 10px;margin-top: 5px;'></i> </a>
+    </div>
+    <div class="right-column">
+      <img class="hero_img" src="hero_img.png" alt="Cloud-based HR App Image">
+    </div>
+  </div>
+
+
+  <!--Features-->
+  <div id="feature_section"></div>
+  <section class="features-section">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <i class="fas fa-chart-area"></i>
+          <h3>Onboarding</h3>
+          <p>AI to create personalised onboarding plans </p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-smile"></i>
+          <h3>Employee Engagement</h3>
+          <p>AI to analyse employee data to identify employee engagement and retention</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-microchip"></i>
+          <h3>NLP</h3>
+          <p>Natural language processing to analyse employee feedback and sentiment</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-project-diagram"></i>
+          <h3>Predictive Analytics</h3>
+          <p>Machine learning algorithms to analyse employee data and predict future trends</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+<!--Jumbotron-->
+<!-- <section class="cta-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 cta-image">
+        <img src="/assets/demo_img.png" alt="Image description">
+      </div>
+      <div class="col-md-6 cta-text">r
+        <h2>Streamline your HR now</h2>
+        <p>Experience the power of Staff Shark for yourself! Request a demo today and see how our cutting-edge technology can help streamline your HR operations and improve your business.</p>
+        <div class="cta-button-wrapper">
+          <a href="#" class="cta-button-jumbo">Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!--Pricing-->
+<!--Pricing-->
+
+<!-- 
+<div class="pricing-container">
+  <h1 class="pricing-title">Pricing</h1>
+  <div class="toggle-container">
+    <button class="toggle-button monthly active" onclick="togglePricing()"><i class="fas fa-calendar-alt"></i> Monthly Payment</button>
+    <button class="toggle-button annual" onclick="togglePricing()"><i class="fas fa-money-bill"></i> Annual Payment</button>
+  </div>
+  <div class="pricing-info">
+    <h2 class="price monthly">S$9.99</h2>
+    <ul class="features monthly">
+      <li>24/7 on call</li>
+      <li>Frequent Updates</li>
+      <li>Top priority customer</li>
+    </ul>
+  </div>
+  <div>
+       <button class="pricing-button-cta">checkout now</button> 
+  </div>
+</div> -->
+
+<div id="pricing-feature"></div>
+<div class="container-pricing">
+  <div class="pricing-works">Pricing</div>
+  <div class="panel pricing-table">
+    
+    <div class="pricing-plan">
+      <i class="fas fa-play class" style="color:#5565AF; font-size: 50px; margin-bottom: 35px;"></i> 
+      <h2 class="pricing-header">Demo</h2>
+      <ul class="pricing-features">
+        <li class="pricing-features-item">testing</li>
+        <li class="pricing-features-item">30min call</li>
+      </ul>
+      <span class="pricing-price">Free</span>
+      <a href="#demo" class="pricing-button">Sign up</a>
+    </div>
+    
+    <div class="pricing-plan">
+      <i class="f	fas fa-project-diagram" style="color:#5565AF; font-size: 50px; margin-bottom: 35px;"></i>   
+      <h2 class="pricing-header">Early Adopter</h2>
+      <ul class="pricing-features">
+        <li class="pricing-features-item">2 features</li>
+        <li class="pricing-features-item">email support</li>
+        <li class="pricing-features-item">10% off on full product</li>
+      </ul>
+      <span class="pricing-price">S$9.99</span>
+      <a href="#/" class="pricing-button is-featured">purchase</a>
+    </div>
+    
+    <div class="pricing-plan">
+      <i class="fas fa-qrcode" style="color:#5565AF; font-size: 50px; margin-bottom: 35px;"></i> 
+      <h2 class="pricing-header">Enterprise</h2>
+      <ul class="pricing-features">
+        <li class="pricing-features-item">4 Features</li>
+        <li class="pricing-features-item">priority email support</li>
+        <li class="pricing-features-item">24/7 on call</li>
+        <li class="pricing-features-item">25% off full product</li>
+      </ul>
+      <span class="pricing-price">S$19.99</span>
+      <a href="#/" class="pricing-button">purchase</a>
+    </div>
+    
+  </div>
+</div>
+
+<!--FAQ-->
+<div id="faq"></div>
+<div class="faq-section-type">
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <h1 class="faq-title">FAQ</h1>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        What is staff shark?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body p-0">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Staff Shark an HR software that harnesses the power of AI to streamline HR processes for businesses of all sizes. With Staff Shark, companies gain access to valuable insights and data to optimise HR strategy and enhance employee satisfaction.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        What products do we offer?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body p-0">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">The platform leverages AI to analyse resumes, screen candidates, and match them with the right job positions, making the recruitment process faster and more accurate. The AI-powered analytics also help businesses to identify employee performance trends, retention risk factors, and other critical insights that can inform strategic decision-making.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        what is early adopter pricing?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body p-0">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Currently we are still in our testing and validation phase which means we are not able to provide a full feature product yet however, for early adopters we are going to compensate them in the future with discounts on our products</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        what would my experience be after purchase?
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body p-0">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"> we aim to provide the best service as much as possible, big part of this being is because we are still validating and testing our product and we want to ensure that the product is constantly being improved</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+<!--About us -->
+
+<div id="abt"></div>
+<div class="container my-5">
+  <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+
+    <svg class="bi mt-5 mb-3" width="48" height="48"><use xlink:href="#check2-circle"/></svg>
+    <h1 class="text-body-emphasis">About Us</h1>
+    <p class="col-lg-6 mx-auto mb-4">
+      Our team is made up of experienced HR professionals and tech experts who are passionate about creating solutions that meet the unique needs of today's businesses. We understand the challenges that come with managing a workforce in a rapidly changing business environment, and we strive to provide our clients with the resources they need to stay ahead of the curve.
+    </p>
+    <a href="https://www.linkedin.com/company/staffshark/">
+    <button class="btn btn-primary px-5 mb-5" type="button">
+      LinkedIn
+    </button></a>
+  </div>
+</div>
+
+<!--DEMO-->
+<div id="demo"></div>
+<section class="cta-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 cta-image">
+        <img src="demo_img.png" alt="Image description">
+      </div>
+      <div class="col-md-6 cta-text">
+        <h2>Contact for demo</h2>
+        <p>Signup to demo the product and discuss your needs</p>
+<div data-tf-widget="aYg9fj3S" data-tf-opacity="100" data-tf-iframe-props="title=demo" data-tf-transitive-search-params
+  data-tf-medium="snippet" style="width:100%;height:500px;"></div>
+<script src="//embed.typeform.com/next/embed.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<div id="footer"></div>
+<div class="footer-container">
+<div class="container">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <img class="footy-logo" src="LinkedIn_Company_Logo_PNG.png" alt="">
+      </a>
+      <p class="text-body-secondary">Staff Shark HR</p>
+      <p class="text-body-secondary">&copy; 2023</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Navigation</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#feature_section" class="nav-link p-0 text-body-secondary">Features</a></li>
+        <li class="nav-item mb-2"><a href="#pricing-feature" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#faq" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#abt" class="nav-link p-0 text-body-secondary">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Socials</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="https://www.linkedin.com/company/staffshark/" class="nav-link p-0 text-body-secondary">LinkedIn</a></li>
+        <li class="nav-item mb-2"><a href="https://www.instagram.com/staffsharkhr/" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+       
+      </ul>
+    </div>
+
+   
+  </footer>
+</div>
+</div>
+
+<script>
+  //button down code
+  // Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+// //form input to backend
+// $(document).ready(function() {
+//   // handle form submission
+//   $("#signup-form").submit(function(event) {
+//     event.preventDefault(); // prevent default form submit behavior
+
+//     // get form data
+//     var name = $("input[name='name']").val();
+//     var email = $("input[name='email']").val();
+
+//     // make AJAX request to server to store user data in database
+//     $.ajax({
+//       url: "/signup", // replace with your server-side route to handle signups
+//       method: "POST",
+//       data: { name: name, email: email },
+//       success: function(response) {
+//         // handle successful signup (e.g. show success message)
+//         console.log("User signed up successfully");
+//         alert('Signup Successful')
+//       },
+//       error: function(xhr, status, error) {
+//         // handle error (e.g. show error message)
+//         console.log("Error signing up user: " + error);
+//         alert('Signup error')
+//       }
+//     });
+//   });
+// });
+
+
+// //pricing toggler
+// function togglePricing() {
+//   const monthlyButton = document.querySelector('.toggle-button.monthly');
+//   const annualButton = document.querySelector('.toggle-button.annual');
+//   const priceElement = document.querySelector('.price');
+  
+//   if (monthlyButton.classList.contains('active')) {
+//     monthlyButton.classList.remove('active');
+//     annualButton.classList.add('active');
+//     priceElement.innerHTML = 'S$119.88';
+//   } else {
+//     monthlyButton.classList.add('active');
+//     annualButton.classList.remove('active');
+//     priceElement.innerHTML = 'S$9.99';
+//   }
+// }
+
+
+</script>
+
+</body>
+</html>
